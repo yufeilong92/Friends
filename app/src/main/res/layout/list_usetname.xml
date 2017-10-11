@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginRight="@dimen/back"
+        android:layout_marginLeft="@dimen/back"
+        android:layout_width="match_parent"
+        android:layout_height="72dip"
+        android:layout_marginTop="@dimen/division_back"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="@dimen/division_back"
+                android:id="@+id/list_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="56分以前" />
+
+            <!--实现效果字体拼接 Stringpang类-->
+          <TextView
+              android:layout_marginBottom="@dimen/division_back"
+              android:layout_marginTop="@dimen/division_back"
+              android:textColor="@color/blue"
+              android:text="小花，小敏觉得赞"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:id="@+id/list_btnDiscuss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/afr" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

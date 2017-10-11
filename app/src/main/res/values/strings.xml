@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Friends</string>
+    <integer name="columns">4</integer>
+    <array name="DialogItem">
+        <item name="photo">照片</item>
+        <item name="video">小视频</item>
+    </array>
+
+
+    <!--//g高德地图-->
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="battery_saving">低功耗模式</string>
+    <string name="device_sensors">仅设备模式</string>
+    <string name="hight_accuracy">高精度模式</string>
+    <string name="interval">定位周期(ms)</string>
+    <string name="httpTimeout">网络超时(ms)</string>
+    <string name="location_once">单次定位</string>
+    <string name="needAddress">逆地理编码</string>
+    <string name="cacheAble">开启缓存</string>
+    <string name="onceLastest">提高首次定位精度</string>
+    <string name="gpsFirst">GPS优先</string>
+    <string name="useSensor">使用传感器</string>
+
+    <string name="title_lastLocation">获取最后一次位置</string>
+    <string name="lastLocation">获取最后一次位置</string>
+    <string name="lastLocation_dec">获取最后一次定位的位置，此位置是一个历史位置</string>
+
+
+    <string name="startLocation">开始定位</string>
+    <string name="stopLocation">停止定位</string>
+
+
+    <string name="defaultInteval">2000</string>
+    <string name="defaultHttpTimeout">30000</string>
+    <!--</resources>高德地图>-->
+
+    <string name="no_show">不显示位置</string>
+    <string name="CanSee">谁可以看</string>
+    <string name="RaindmeWho">提醒谁</string>
+    <string name="complete">完成</string>
+    <string name="obert">公开</string>
+    <string name="WTS">这一刻，想说的...</string>
+
+</resources>

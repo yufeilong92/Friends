@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/location_noshow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:lines="2"
+            android:text="不显示位置"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_titel_TXsize" />
+
+        <ImageView
+            android:id="@+id/location_MS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/back"
+            android:src="@mipmap/zhifu_gouxuankuang_on" />
+
+    </RelativeLayout>
+</LinearLayout>

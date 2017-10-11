@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+
+            android:id="@+id/friends_back"
+            android:layout_width="@dimen/back_48"
+            android:layout_height="@dimen/back_48"
+            android:layout_centerVertical="true"
+            android:background="@color/black"
+            android:padding="@dimen/back"
+            android:src="@mipmap/ac" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/back_8"
+            android:layout_toRightOf="@id/friends_back"
+            android:text="法律圈"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_20" />
+
+        <Button
+            android:id="@+id/friends_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/black"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_20" />
+    </RelativeLayout>
+</LinearLayout>

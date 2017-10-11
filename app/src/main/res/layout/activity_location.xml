@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/location_Iv_back"
+            android:src="@mipmap/header_back"
+            android:layout_width="@dimen/imges_width"
+            android:layout_height="@dimen/imges_height" />
+        <TextView
+            android:layout_marginLeft="@dimen/back"
+            android:textSize="@dimen/small_titel_TXsize"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="所在位置"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/show_noshowLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/location_noshow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:lines="2"
+                android:text="不显示位置"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_titel_TXsize" />
+
+            <ImageView
+                android:id="@+id/location_MS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/back"
+                android:src="@mipmap/zhifu_gouxuankuang_on" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/show_showLocation_Rela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/location_showText"
+                android:layout_width="match_parent"
+                android:layout_marginRight="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:lines="2"
+                android:text="不显示位置"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_titel_TXsize" />
+
+            <ImageView
+                android:id="@+id/location_showImge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/back"
+                android:src="@mipmap/zhifu_gouxuankuang_on" />
+
+        </RelativeLayout>
+        <ScrollView
+            android:id="@+id/locaton_showScrolLView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin" />
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/location_showLl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/location_showloaing"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar2"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/back" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center_vertical"
+                        android:text="正在搜索您的位置"
+                        android:textSize="@dimen/dialog_text_size" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/location_showLV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

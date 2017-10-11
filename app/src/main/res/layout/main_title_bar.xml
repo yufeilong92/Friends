@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:layout_width="@dimen/imge_width"
+        android:layout_height="@dimen/imge_height"
+        android:layout_centerVertical="true"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="OnHomeBack"
+        android:paddingLeft="16dp"
+        android:paddingStart="@dimen/back"
+        android:src="@mipmap/header_back" />
+
+    <TextView
+        android:id="@+id/title_Textsh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="朋友圈"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_text_size" />
+
+    <ImageButton
+        android:id="@+id/title_camera"
+        android:layout_width="@dimen/button_click"
+        android:layout_height="@dimen/button_click"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="@dimen/back"
+        android:src="@mipmap/titiel_camera" />
+
+</RelativeLayout>

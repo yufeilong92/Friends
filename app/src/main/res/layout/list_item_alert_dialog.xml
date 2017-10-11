@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liearlayout"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/fabulous"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/Imge"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+            <ImageView
+                android:id="@+id/list_item_zanPic"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@id/Imge"
+                android:src="@mipmap/xins" />
+
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/list_item_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/Imge"
+                android:text="赞"
+                android:textSize="@dimen/small_title_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/contentimge"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/list_item_pingPic"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@id/contentimge"
+                android:src="@mipmap/comments" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/list_item_ping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/contentimge"
+                android:text="评论"
+                android:textSize="@dimen/small_title_size" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

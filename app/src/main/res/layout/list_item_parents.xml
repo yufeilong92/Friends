@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="@dimen/back"
+            android:text="2222222222222"
+            android:id="@+id/parent_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/parent_con"
+            android:paddingLeft="@dimen/back"
+            android:text="1111111111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/parent_iv"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <!--android:src="@mipmap/radio_button_off"-->
+</LinearLayout>
